@@ -67,10 +67,8 @@ int main()
             location = (x+vinfo.xoffset) * (vinfo.bits_per_pixel/8) +
                        (y+vinfo.yoffset) * finfo.line_length;
     // Figure out where in memory to put the pixel
-    //for (y = 100; y < 400; y++) {
+    for (y = 100; y < 400; y++) {
         for (x = 200; x < 560; x++) {
-		z = (sin(x))*100;
-		y = x + z;
 
 	    usleep(7000);
             location = (x+vinfo.xoffset) * (vinfo.bits_per_pixel/8) +
